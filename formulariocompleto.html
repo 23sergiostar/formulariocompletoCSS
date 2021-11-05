@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Formulario Completo</title>
+            <link rel="stylesheet" href="cssformcom.css">
+        </head>
+    <style>
+    table, th, td {border:1px solid rgb(0, 108, 128);}
+    </style>
+        <body style="background-color:#fabfff;">
+        <form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+            <table style="width:50%">
+                <tr>
+                    <th colspan="2" style="text-align: left; font-size: 45px; font-family: Brush Script MT;">Formulario Usuario</th>
+                </tr>
+                <tr>
+                    <td> <label for="nombre">Introduzca su nombre: </label></td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="psw">Introduzca su constraseña: </label></td>
+                    <td><input type="password" name="password" id="password" size="25" placeholder="Introduzca su constraseña"></td>
+                </tr>
+                <tr>
+                    <td><label for="direccion">Introduzca su dirección: </label></td>
+                    <td><textarea id="direccion" name="direccion" rows="3" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Selecciona un juego:</td>
+                    <td> <input type="checkbox" id="juego1" name="deportes[Hockey]" value="Hockey">
+                    <label for="juego1"> Hockey</label><br>
+                    <input type="checkbox" id="juego2" name="deportes[Fútbol]" value="Fútbol">
+                    <label for="juego2">Fútbol</label><br>
+                    <input type="checkbox" id="juego3" name="deportes[Badminton]" value="Badminton">
+                    <label for="juego3">Badminton</label></td>
+                </tr>
+                <tr>
+                    <td>Género:</td>
+                    <td><input type="radio" name="sexo" id="generom" value="Hombre"><label for="generom">Hombre</label>
+                    <input type="radio" name="sexo" id="generof" value="Mujer"><label for="generof">Mujer</label><br></td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Seleccione su edad: </label></td>
+                    <td> <select name="edad">
+                    <option value="Seleccione una opcion">Seleccione una opción</option>
+                    <option value="17">17</option> 
+                    <option value="18">18</option> 
+                    <option value="19">19</option>
+                    <option value="20">20</option> 
+                    <option value="21">21</option> 
+                    <option value="22">22</option> 
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="file">Seleccione un archivo:</label></td>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input class="buttonc" type="button" value="Haz Clic">
+                    <input class="buttonc"type="reset" value="Resetear Formulario">
+                    <input class="submit" type="submit" value="Enviar Formulario"></td>
+                </tr>
+            </table>
+        </form>
+        </body>
+</html>
